@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NontScramber48 — Portfolio</title>
+<meta name="description" content="Full-stack Web Developer building business web apps with Vue, Supabase and Firebase.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f7f8fa; --surface: #ffffff; --text: #111827; --muted: #5b6474;
+    --border: #e4e7ec; --accent: #0f9d76; --accent-soft: #e3f5ef; --chip: #f1f3f6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117; --surface: #161b22; --text: #e6edf3; --muted: #9aa4b2;
+      --border: #2a313c; --accent: #3fcf9e; --accent-soft: #11342a; --chip: #1f2630;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, sans-serif; line-height: 1.55; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 72px 0 40px; }
+  .eyebrow { color: var(--accent); font-weight: 600; font-size: 14px; letter-spacing: .04em; text-transform: uppercase; }
+  h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.1; margin: 8px 0 16px; letter-spacing: -.02em; }
+  .lead { font-size: 18px; color: var(--muted); max-width: 640px; margin: 0 0 24px; }
+  .btn { display: inline-block; padding: 10px 18px; border-radius: 10px; background: var(--accent); color: #fff; font-weight: 600; }
+  .btn:hover { text-decoration: none; opacity: .9; }
+  .stats { display: flex; gap: 32px; flex-wrap: wrap; margin-top: 32px; }
+  .stats b { display: block; font-size: 28px; }
+  .stats span { color: var(--muted); font-size: 14px; }
+  section { padding: 32px 0; }
+  h2 { font-size: 24px; margin: 0 0 16px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { background: var(--chip); border: 1px solid var(--border); border-radius: 999px; padding: 4px 12px; font-size: 13px; }
+  .featured { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
+  .featured h3 { font-size: 22px; margin: 4px 0 8px; }
+  .featured ul { margin: 12px 0 16px; padding-left: 20px; color: var(--muted); }
+  .badge { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+  .filters button { font: inherit; font-size: 14px; cursor: pointer; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface); color: var(--text); }
+  .filters button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+  .card h3 { margin: 0; font-size: 17px; word-break: break-word; }
+  .card p { margin: 0; color: var(--muted); font-size: 14px; flex: 1; }
+  .card .meta { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); }
+  .card .links { display: flex; gap: 12px; font-size: 14px; font-weight: 600; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tags .chip { font-size: 12px; padding: 2px 8px; }
+  footer { padding: 40px 0 56px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--border); margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Full-stack Web Developer</div>
+    <h1>NontScramber48</h1>
+    <p class="lead">I build business web apps with Vue, Supabase and Firebase: production reporting for factories, tracking systems, admin dashboards and LINE LIFF apps.</p>
+    <a class="btn" href="https://github.com/NontScramber48">GitHub profile →</a>
+    <div class="stats">
+      <div><b id="stat-projects">–</b><span>projects</span></div>
+      <div><b>2022–2026</b><span>building</span></div>
+      <div><b>Vue</b><span>main framework</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Tech stack</h2>
+    <div class="chips">
+      <span class="chip">Vue 3</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span>
+      <span class="chip">Next.js</span><span class="chip">React</span><span class="chip">Tailwind CSS</span>
+      <span class="chip">PrimeVue</span><span class="chip">Vite</span><span class="chip">Pinia</span>
+      <span class="chip">Supabase / PostgreSQL</span><span class="chip">Firebase</span><span class="chip">LINE LIFF</span>
+      <span class="chip">Chart.js</span><span class="chip">Flutter</span><span class="chip">Docker</span>
+      <span class="chip">Netlify</span><span class="chip">Vercel</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Featured project</h2>
+    <div class="featured">
+      <span class="badge">Client work · private repo</span>
+      <h3>Vivo Water — Production Reporting System</h3>
+      <p style="margin:0;color:var(--muted)">A daily production reporting web app for a drinking-water factory, replacing paper reports.</p>
+      <ul>
+        <li>Daily report form: morning/afternoon shift times, machine breakdowns, output, NG (defect) counts</li>
+        <li>Auto-calculated KPIs: net run time, bottles per hour, NG % for film, cap and bottle</li>
+        <li>Dashboard with 1-day / 7-day / 1-month filters and NG trend charts</li>
+        <li>Excel export and A4 print layout; report history</li>
+        <li>PIN login backed by Supabase Auth with row-level security</li>
+      </ul>
+      <div class="tags">
+        <span class="chip">Vue 3</span><span class="chip">Vite</span><span class="chip">Tailwind</span>
+        <span class="chip">Supabase</span><span class="chip">Chart.js</span><span class="chip">SheetJS</span><span class="chip">Netlify</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>All projects</h2>
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <footer>© 2026 NontScramber48 · <a href="https://github.com/NontScramber48">github.com/NontScramber48</a></footer>
+</div>
+
+<script>
+  const GH = 'https://github.com/NontScramber48/';
+  // cat: category · live: deployed demo · priv: private repo (no link) · base: built from a template/fork
+  const projects = [
+    { name: 'Vivo Water', cat: 'Business apps', year: 2026, priv: true, desc: 'Daily production reporting system for a drinking-water factory with KPI dashboard, Excel export and print reports.', tags: ['Vue 3', 'Supabase', 'Tailwind', 'Chart.js'] },
+    { name: 'thegms', title: 'Inventex', cat: 'Business apps', year: 2024, live: 'https://inventex-fbee0.web.app/sign-in', base: true, desc: 'Inventory management front end with sign-in, hosted on Firebase.', tags: ['Vue 3', 'PrimeVue', 'Firebase'] },
+    { name: 'TheGMSS-Tracking', cat: 'Tracking (GMS)', year: 2024, base: true, desc: 'GMS tracking app with email/password authentication.', tags: ['Vue', 'Firebase Auth'] },
+    { name: 'GMS-tracking', cat: 'Tracking (GMS)', year: 2024, base: true, desc: 'GMS tracking with user registration and login.', tags: ['Vue 3', 'Pinia', 'Vite'] },
+    { name: 'tracking-mss', cat: 'Tracking (GMS)', year: 2024, base: true, desc: 'Tracking system login page and front end.', tags: ['Vue', 'PrimeVue'] },
+    { name: 'tracking_GMSS', cat: 'Tracking (GMS)', year: 2024, base: true, desc: 'Tracking UI built on PrimeVue with Tailwind styling.', tags: ['Nuxt', 'PrimeVue', 'Tailwind'] },
+    { name: 'thegmss', cat: 'Tracking (GMS)', year: 2024, base: true, desc: 'Admin panel for the GMS system based on the Sakai template.', tags: ['Vue', 'PrimeVue'] },
+    { name: 'HPC_car', cat: 'Car management', year: 2024, desc: 'Car management system front end.', tags: ['Vue 3', 'PrimeVue', 'Vite'] },
+    { name: 'HPC_carmangement', cat: 'Car management', year: 2024, desc: 'Car management project setup.', tags: ['Vue 3', 'PrimeVue'] },
+    { name: 'carinfo', cat: 'Car management', year: 2023, base: true, desc: 'Car information app.', tags: ['React', 'TypeScript'] },
+    { name: 'Carmanagement.github.io', cat: 'Car management', year: 2023, desc: 'JSON data served through GitHub Pages for the car management apps.', tags: ['GitHub Pages', 'JSON'] },
+    { name: 'manager.github.io', cat: 'Car management', year: 2023, desc: 'JSON data endpoint hosted on GitHub Pages.', tags: ['GitHub Pages', 'JSON'] },
+    { name: 'DEDE_MEMBER-LIFF', cat: 'LINE LIFF', year: 2023, desc: 'Member app that runs inside LINE.', tags: ['Vue', 'LINE LIFF'] },
+    { name: 'vue3_liff', cat: 'LINE LIFF', year: 2023, live: 'https://vue3-blog-rho.vercel.app/', desc: 'LINE LIFF app with Vue 3, TypeScript and Vite.', tags: ['Vue 3', 'TypeScript', 'SCSS'] },
+    { name: 'Liff_101', cat: 'LINE LIFF', year: 2023, desc: 'Getting started with LINE LIFF in Vue.', tags: ['Vue', 'LINE LIFF'] },
+    { name: 'liff101', cat: 'LINE LIFF', year: 2023, desc: 'LIFF experiment.', tags: ['LINE LIFF'] },
+    { name: 'liff102', cat: 'LINE LIFF', year: 2023, desc: 'LIFF experiment, part 2.', tags: ['LINE LIFF'] },
+    { name: 'liff', cat: 'LINE LIFF', year: 2023, desc: 'LIFF app in plain HTML, CSS and JavaScript.', tags: ['HTML', 'CSS', 'JavaScript'] },
+    { name: 'liffvue', cat: 'LINE LIFF', year: 2023, desc: 'Vue + LIFF starter.', tags: ['Vue', 'LINE LIFF'] },
+    { name: 'vue-lineliff', cat: 'LINE LIFF', year: 2023, desc: 'Vue 3 LINE LIFF project.', tags: ['Vue 3', 'LINE LIFF'] },
+    { name: 'primevueliff', cat: 'LINE LIFF', year: 2023, base: true, desc: 'PrimeVue component library, used for LIFF UI work.', tags: ['PrimeVue'] },
+    { name: 'dashboard_dede', cat: 'Dashboards', year: 2023, base: true, desc: 'Admin dashboard based on Vuestic Admin, with Docker setup.', tags: ['Vue', 'TypeScript', 'Docker'] },
+    { name: 'Dashboard-vue', cat: 'Dashboards', year: 2023, base: true, desc: 'Admin dashboard based on Vue Paper Dashboard.', tags: ['Vue', 'vue-router'] },
+    { name: 'Blognext', cat: 'Websites', year: 2023, live: 'https://blognext-phi.vercel.app', desc: 'Personal blog built with Next.js and TypeScript.', tags: ['Next.js', 'TypeScript', 'Vercel'] },
+    { name: 'BrewscriptRoastery', cat: 'Websites', year: 2023, desc: 'Coffee roastery website.', tags: ['Next.js', 'JavaScript'] },
+    { name: 'DEDE_cafe', cat: 'Websites', year: 2023, desc: 'Cafe project.', tags: [] },
+    { name: 'Transtogpt', cat: 'Experiments', year: 2023, desc: 'Translation with GPT experiment.', tags: [] },
+    { name: 'onemonthprojec', cat: 'Mobile', year: 2022, priv: true, desc: 'Cross-platform mobile app built in one month.', tags: ['Flutter', 'Dart'] },
+  ];
+
+  const cats = ['All', ...new Set(projects.map(p => p.cat))];
+  let active = 'All';
+  const filters = document.getElementById('filters');
+  const grid = document.getElementById('grid');
+  document.getElementById('stat-projects').textContent = projects.length;
+
+  function el(tag, attrs = {}, text) {
+    const e = document.createElement(tag);
+    Object.assign(e, attrs);
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  function renderFilters() {
+    filters.replaceChildren(...cats.map(c => {
+      const b = el('button', { type: 'button' }, c);
+      b.setAttribute('aria-pressed', c === active);
+      b.onclick = () => { active = c; renderFilters(); renderGrid(); };
+      return b;
+    }));
+  }
+
+  function renderGrid() {
+    const list = projects.filter(p => active === 'All' || p.cat === active);
+    grid.replaceChildren(...list.map(p => {
+      const card = el('article', { className: 'card' });
+      const meta = el('div', { className: 'meta' });
+      meta.append(el('span', {}, p.cat), el('span', {}, p.year));
+      card.append(meta, el('h3', {}, p.title || p.name), el('p', {}, p.desc));
+      const tags = el('div', { className: 'tags' });
+      tags.append(...p.tags.map(t => el('span', { className: 'chip' }, t)));
+      if (p.base) tags.append(el('span', { className: 'chip' }, 'from template'));
+      card.append(tags);
+      const links = el('div', { className: 'links' });
+      if (p.priv) links.append(el('span', { className: 'badge' }, 'Private repo'));
+      else links.append(el('a', { href: GH + p.name }, 'Code →'));
+      if (p.live) links.append(el('a', { href: p.live }, 'Live demo →'));
+      card.append(links);
+      return card;
+    }));
+  }
+
+  renderFilters();
+  renderGrid();
+</script>
+</body>
+</html>
